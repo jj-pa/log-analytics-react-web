@@ -10,7 +10,9 @@ import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    boxShadow: 'none'
+    background: '#FFFFFF',
+    boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .1)',
+    color: 'white'
   },
   flexGrow: {
     flexGrow: 1
@@ -36,12 +38,12 @@ const Topbar = props => {
         <RouterLink to="/">
           <img
             alt="Logo"
-            src="/images/logos/logo--white.svg"
+            src="/images/logos/logo.svg"
           />
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>
-          <IconButton color="inherit">
+          <IconButton color="black">
             <Badge
               badgeContent={notifications.length}
               color="primary"
@@ -52,7 +54,7 @@ const Topbar = props => {
           </IconButton>
           <IconButton
             className={classes.signOutButton}
-            color="inherit"
+            color="black"
           >
             <InputIcon />
           </IconButton>
