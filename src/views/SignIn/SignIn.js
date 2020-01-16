@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'url(/images/auth.jpg)',
+    backgroundImage: 'url(/images/sign-in.png)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
@@ -60,15 +60,16 @@ const useStyles = makeStyles(theme => ({
     flexBasis: '600px'
   },
   quoteText: {
-    color: theme.palette.white,
+    color: '#555',
+    fontFamily: '나눔고딕 ExtraBold',
     fontWeight: 300
   },
   name: {
     marginTop: theme.spacing(3),
-    color: theme.palette.white
+    color: theme.palette.black
   },
   bio: {
-    color: theme.palette.white
+    color: theme.palette.black
   },
   contentContainer: {},
   content: {
@@ -195,21 +196,20 @@ const SignIn = props => {
                 className={classes.quoteText}
                 variant="h1"
               >
-                Hella narwhal Cosby sweater McSweeney's, salvia kitsch before
-                they sold out High Life.
+                로그 분석 시스템
               </Typography>
               <div className={classes.person}>
                 <Typography
                   className={classes.name}
                   variant="body1"
                 >
-                  Takamaru Ayako
+                  JEONGJIN PARK
                 </Typography>
                 <Typography
                   className={classes.bio}
                   variant="body2"
                 >
-                  Manager at inVision
+                  빅데이터 인재 양성과정
                 </Typography>
               </div>
             </div>
@@ -336,7 +336,7 @@ const SignIn = props => {
           </div>
         </Grid>
       </Grid>
-    </div>
+    </div >
   );
 };
 
