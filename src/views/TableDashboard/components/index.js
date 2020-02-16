@@ -6,3 +6,6 @@ export { default as TasksProgress } from './TasksProgress';
 export { default as TotalProfit } from './TotalProfit';
 export { default as TotalUsers } from './TotalUsers';
 export { default as UsersByDevice } from './UsersByDevice';
+export { default as BarChart } from './BarChart';
+export { default as Bar } from './Bar';
+export { default as AnimatedBar } from './AnimatedBar';
